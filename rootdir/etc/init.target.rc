@@ -147,6 +147,10 @@ on boot
     chown radio radio sys/module/stk3x3x/parameters/call_status_flag
 #Huaqin add for als/ps permission by zhuqiang at 2018/8/03 end
 
+#Touchscreen Gestures
+    chown system system /proc/tpd_gesture
+    chmod 0644 /proc/tpd_gesture
+
 #Load WLAN driver
    insmod /vendor/lib/modules/qca_cld3/qca_cld3_wlan.ko
    setprop wlan.driver.status "ok"
