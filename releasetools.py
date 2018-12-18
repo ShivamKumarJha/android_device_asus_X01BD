@@ -34,3 +34,12 @@ def AddTrustZoneAssertion(info, input_zip):
       cmd = 'assert(X01BD.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1");'
       info.script.AppendExtra(cmd)
   return
+
+def FullOTA_InstallEnd(info):
+    info.script.Mount("/system");
+    info.script.Mount("/vendor");
+    info.script.AppendExtra('if run_program("/tmp/install/bin/post_install.sh") != 0 then');
+    info.script.AppendExtra('ui_print("Removing NFC.");');
+    info.script.AppendExtra('endif;');
+    info.script.Unmount("/system");
+    info.script.Unmount("/vendor");

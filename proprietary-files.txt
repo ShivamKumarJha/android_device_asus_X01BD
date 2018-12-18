@@ -2809,6 +2809,10 @@ vendor/lib/libvpptestutils.so
 vendor/lib/libvqzip.so
 vendor/lib/vendor.qti.hardware.vpp@1.1_vendor.so
 
+# NFC
+-vendor/app/SmartcardService/SmartcardService.apk
+vendor/firmware/libpn553_fw.so
+
 # Perf
 lib64/libqti-at.so
 lib64/libqti-perfd-client_system.so
