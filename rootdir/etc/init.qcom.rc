@@ -602,6 +602,9 @@ on property:sys.boot_completed=1
     #Reset read ahead for dm-0 and dm-1 to 512kb
     write /sys/block/dm-0/queue/read_ahead_kb 512
     write /sys/block/dm-1/queue/read_ahead_kb 512
+    #  shengzhong  add for pcmark  2018/11/26 start
+    write /sys/devices/virtual/block/dm-0/queue/write_cache "write through"
+    #  shengzhong add for pcmark 2018/11/26 end
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
@@ -961,6 +964,9 @@ service cnss-daemon /vendor/bin/cnss-daemon -n -l
 
 on property:sys.powerctl=*
     stop cnss-daemon
+    #  shengzhong add for pcmark  2018/11/26 start
+    write /sys/devices/virtual/block/dm-0/queue/write_cache "write back"
+    # shengzhong  add for pcmark 2018/11/26 end
 
 service dhcpcd_bt-pan /system/bin/dhcpcd -BKLG
     class late_start
@@ -1322,3 +1328,10 @@ on post-fs-data
 	restorecon /data/vendor/focaltech
 # ------------------- focal fingerprint end ---------------------
 /* Huaqin add for ZQL1820-42 by puqirui at 2018/08/02 start */
+
+# Huaqin modify for ZQL1820-1190 by yangzhiyuan at 2018/11/19 start
+on property:persist.asus.ramdump=1
+    write /sys/module/msm_poweroff/parameters/download_mode 1
+on property:persist.asus.ramdump=0
+    write /sys/module/msm_poweroff/parameters/download_mode 0
+# Huaqin modify for ZQL1820-1190 by yangzhiyuan at 2018/11/19 end

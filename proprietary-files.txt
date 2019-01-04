@@ -630,6 +630,11 @@ vendor/lib/libchromatix_ar1337_cpp_video_full.so
 vendor/lib/libchromatix_ar1337_default_preview_bu64297.so
 vendor/lib/libchromatix_ar1337_default_video.so
 vendor/lib/libchromatix_ar1337_default_video_bu64297.so
+vendor/lib/libchromatix_ar1337_front_bokeh_cpp_preview.so
+vendor/lib/libchromatix_ar1337_front_bokeh_cpp_snapshot.so
+vendor/lib/libchromatix_ar1337_front_bokeh_preview.so
+vendor/lib/libchromatix_ar1337_front_bokeh_snapshot.so
+vendor/lib/libchromatix_ar1337_front_bokeh_zsl_preview_bu64297.so
 vendor/lib/libchromatix_ar1337_hfr_120.so
 vendor/lib/libchromatix_ar1337_hfr_120_bu64297.so
 vendor/lib/libchromatix_ar1337_hfr_60.so
@@ -2517,7 +2522,7 @@ vendor/firmware/cppf.mdt
 vendor/firmware/Himax_firmware.bin
 vendor/firmware/hx_criteria.csv
 vendor/firmware/mono.cnt
-vendor/firmware/novatek_ts_fw_v85.bin
+vendor/firmware/novatek_ts_fw_v87.bin
 vendor/firmware/startup_fw_update.img
 
 # FM
