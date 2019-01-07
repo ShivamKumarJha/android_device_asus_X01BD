@@ -3073,6 +3073,7 @@ vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so
 # Sensors
 -vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 vendor/bin/sensors.qcom
+vendor/etc/init/android.hardware.sensors@1.0-service.rc
 vendor/etc/sensors/sensor_def_qcomdev.conf
 vendor/lib64/hw/activity_recognition.sdm660.so
 vendor/lib64/libsensor1.so
