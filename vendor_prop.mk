@@ -48,7 +48,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.camera.expose.aux=1 \
-	persist.camera.HAL3.enabled=0 \
+	persist.camera.HAL3.enabled=1 \
 	persist.camera.preview.ubwc=0 \
 	persist.ts.rtmakeup=1 \
 	vendor.camera.aux.packagelist=org.codeaurora.snapcam
