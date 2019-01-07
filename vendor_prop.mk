@@ -234,7 +234,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.lineage.build.vendor_security_patch=2018-11-01
+	ro.lineage.build.vendor_security_patch=2018-12-01
 
 # WFD display
 PRODUCT_PROPERTY_OVERRIDES += \
