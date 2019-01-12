@@ -54,6 +54,7 @@ public class TouchscreenGestures {
         1,
         1,
         1,
+        1,
         1
     };
 
@@ -66,6 +67,7 @@ public class TouchscreenGestures {
         new TouchscreenGesture(4, "Letter W", 0x2ec),
         new TouchscreenGesture(5, "Letter Z", 0x2ef),
         new TouchscreenGesture(6, "Swipe Up", 0x2f6),
+        new TouchscreenGesture(7, "Double Tap", 0x2f7),
     };
 
     public static final int[] ALL_GESTURE_MASKS = {
@@ -76,6 +78,7 @@ public class TouchscreenGestures {
         0x180, // w gesture mask
         0x108, // z gesture mask
         0x102, //slide up gesture mask
+        0x101, //double click gesture mask
     };
 
     /**
